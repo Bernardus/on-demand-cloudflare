@@ -1,8 +1,8 @@
 // posts will be populated at build time by getStaticProps()
-function Blog({ posts }) {
+function Blog({ posts, date }) {
     return (
       <ul>
-        <div>{ date } </div>
+        <div>{ JSON.stringify(date) } </div>
        { JSON.stringify(posts)}
       </ul>
     )
